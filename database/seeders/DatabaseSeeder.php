@@ -15,7 +15,10 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
          $this->call(AdminSeeder::class);
-         $this->call(UserSeeder::class);
+         $this->call(UserSeeder::class);         
+         $this->call(AgentSeeder::class);
+         $this->call(CommentSeeder::class);
+         $this->call(CustomerReviewSeeder::class);
          $this->call(StateSeeder::class);
          $this->call(CitySeeder::class);
          $this->call(AreaSeeder::class);
@@ -25,6 +28,7 @@ class DatabaseSeeder extends Seeder
         //]);
          $this->call(ProjectSeeder::class);
          $this->call(FloorSeeder::class);
+         $this->call(UnitSeeder::class);         
          $this->call(AgentSeeder::class);
          $this->call(BlogSeeder::class);
          $this->call(SubmittedUnitSeeder::class);
