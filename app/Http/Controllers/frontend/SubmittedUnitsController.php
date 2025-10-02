@@ -20,6 +20,8 @@ class SubmittedUnitsController extends Controller
     public function index(Request $request)
     {
 
+        $user = Auth::user();
+
         $orderby = $request->input('orderby','created_at');
         $order = $request->input('order','asc');
         $unitIdsRaw = $request->input('unitIds');
@@ -29,10 +31,10 @@ class SubmittedUnitsController extends Controller
 
 
         if(empty($unitIds)){
-            $units = SubmittedUnit::orderBy($orderby, $order)->paginate($items)->appends($request->all());            
+            $units = SubmittedUnit::orderBy($orderby, $order)->where('user_id',$user->id)->paginate($items)->appends($request->all());            
         }
         else{
-            $units = SubmittedUnit::orderBy($orderby, $order)->whereIn('id',$unitIds)->paginate($items)->appends($request->all());            
+            $units = SubmittedUnit::orderBy($orderby, $order)->where('user_id',$user->id)->whereIn('id',$unitIds)->paginate($items)->appends($request->all());            
         }
 
         if($request->ajax()){
@@ -98,7 +100,7 @@ class SubmittedUnitsController extends Controller
 
             $path = $photo->store('unit_profile_images' , 'public');
 
-            $unit->user_photo = '/public/storage/' .$path;
+            $unit->user_photo = '/storage/' .$path;
         }
 
         $unit->number = $request->number;
@@ -116,7 +118,7 @@ class SubmittedUnitsController extends Controller
                 $fileName.=$i;
                 $fileName.='.';
                 $fileName.=$fileNameExtract[1];
-                $path = 'public/frontend/images/submittedunits/';
+                $path = 'frontend/images/submittedunits/';
                 $file->move($path,$fileName);
                 $image_url = $path.$fileName;
                 $images[]=$image_url;
@@ -278,7 +280,7 @@ class SubmittedUnitsController extends Controller
 
             $path = $photo->store('unit_profile_images' , 'public');
 
-            $unit->user_photo = '/public/storage/' .$path;
+            $unit->user_photo = '/storage/' .$path;
         }
 
         $unit->number = $request->number;
@@ -302,7 +304,7 @@ class SubmittedUnitsController extends Controller
                 $fileName.=$i;
                 $fileName.='.';
                 $fileName.=$fileNameExtract[1];
-                $path = 'public/frontend/images/submittedunits/';
+                $path = 'frontend/images/submittedunits/';
                 $file->move($path,$fileName);
                 $image_url = $path.$fileName;
                 $images[]=$image_url;

@@ -9,17 +9,17 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	<link rel="stylesheet" href="{{asset('public/backend/admin_login_assets/css/style.css')}}">
+	<link rel="stylesheet" href="{{asset('backend/admin_login_assets/css/style.css')}}">
         <!-- Site Icons -->
-        <link rel="shortcut icon" href="{{asset('public/frontend/assets/img/Realverse_main_logo.png')}}" type="image/x-icon" sizes="180x180">
-        <link rel="apple-touch-icon" href="{{asset('public/frontend/assets/img/Realverse_main_logo.png')}}">  
+        <link rel="shortcut icon" href="{{asset('frontend/assets/img/Realverse_main_logo.png')}}" type="image/x-icon" sizes="180x180">
+        <link rel="apple-touch-icon" href="{{asset('frontend/assets/img/Realverse_main_logo.png')}}">  
 	</head>
-	<body class="img js-fullheight" style="background-image: url(<?php echo asset('public/backend/admin_login_assets/images/istockphoto-1295808919-612x612.jpg'); ?>);">
+	<body class="img js-fullheight" style="background-image: url(<?php echo asset('backend/admin_login_assets/images/istockphoto-1295808919-612x612.jpg'); ?>);">
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section"><img src="{{asset('public/backend/admin_login_assets/images/1834348036766227.png')}}"></h2>
+					<h2 class="heading-section"><img src="{{asset('backend/admin_login_assets/images/1834348036766227.png')}}"></h2>
 				</div>
 			</div>
 			<div class="row justify-content-center">
@@ -49,10 +49,10 @@
 		</div>
 	</section>
 
-	<script src="{{asset('public/backend/admin_login_assets/js/jquery.min.js')}}"></script>
-  <script src="{{asset('public/backend/admin_login_assets/js/popper.js')}}"></script>
-  <script src="{{asset('public/backend/admin_login_assets/js/bootstrap.min.js')}}"></script>
-  <script src="{{asset('public/backend/admin_login_assets/js/main.js')}}"></script>
+	<script src="{{asset('backend/admin_login_assets/js/jquery.min.js')}}"></script>
+  <script src="{{asset('backend/admin_login_assets/js/popper.js')}}"></script>
+  <script src="{{asset('backend/admin_login_assets/js/bootstrap.min.js')}}"></script>
+  <script src="{{asset('backend/admin_login_assets/js/main.js')}}"></script>
   <script>
     $.ajaxSetup({
         headers: {

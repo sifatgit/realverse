@@ -106,7 +106,7 @@ class AdminSettingsController extends Controller
             $image_name=hexdec(uniqid());
             $ext=strtolower($ad_image->getClientOriginalExtension());
             $image_full_name=$image_name.'.'.$ext;
-            $upload_path='public/admin/images/ad_image/';
+            $upload_path='admin/images/ad_image/';
             $image_url=$upload_path.$image_full_name;
             $success=$ad_image->move($upload_path,$image_full_name);
                       
@@ -121,7 +121,7 @@ class AdminSettingsController extends Controller
             $image_name=hexdec(uniqid());
             $ext=strtolower($logo->getClientOriginalExtension());
             $image_full_name=$image_name.'.'.$ext;
-            $upload_path='public/admin/images/logo/';
+            $upload_path='admin/images/logo/';
             $image_url=$upload_path.$image_full_name;
             $success=$logo->move($upload_path,$image_full_name);
             $setting->logo = $image_url;
@@ -133,7 +133,7 @@ class AdminSettingsController extends Controller
             $image_name=hexdec(uniqid());
             $ext=strtolower($about_us_image->getClientOriginalExtension());
             $image_full_name=$image_name.'.'.$ext;
-            $upload_path='public/admin/images/about_us_image/';
+            $upload_path='admin/images/about_us_image/';
             $image_url=$upload_path.$image_full_name;
             $success=$about_us_image->move($upload_path,$image_full_name);
             $setting->about_us_image = $image_url;
@@ -235,7 +235,7 @@ class AdminSettingsController extends Controller
             $image_name=hexdec(uniqid());
             $ext=strtolower($ad_image->getClientOriginalExtension());
             $image_full_name=$image_name.'.'.$ext;
-            $upload_path='public/admin/images/ad_image/';
+            $upload_path='admin/images/ad_image/';
             $image_url=$upload_path.$image_full_name;
             $success=$ad_image->move($upload_path,$image_full_name);
 
@@ -259,7 +259,7 @@ class AdminSettingsController extends Controller
             $image_name=hexdec(uniqid());
             $ext=strtolower($logo->getClientOriginalExtension());
             $image_full_name=$image_name.'.'.$ext;
-            $upload_path='public/admin/images/logo/';
+            $upload_path='admin/images/logo/';
             $image_url=$upload_path.$image_full_name;
             $success=$logo->move($upload_path,$image_full_name);
             $setting->logo = $image_url;
@@ -275,7 +275,7 @@ class AdminSettingsController extends Controller
             $image_name=hexdec(uniqid());
             $ext=strtolower($about_us_image->getClientOriginalExtension());
             $image_full_name=$image_name.'.'.$ext;
-            $upload_path='public/admin/images/about_us_image/';
+            $upload_path='admin/images/about_us_image/';
             $image_url=$upload_path.$image_full_name;
             $success=$about_us_image->move($upload_path,$image_full_name);
             $setting->about_us_image = $image_url;

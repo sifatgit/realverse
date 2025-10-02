@@ -23,7 +23,7 @@
                                 <div class="wizard-header">
                                     <h3>
                                         <b>Submit</b> YOUR PROPERTY <br>
-                                        <small>Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
+                                        <small>You can submit to enlist your property for rent or sell.</small>
                                     </h3>
                                 </div>
 
@@ -42,7 +42,7 @@
                                             <div class="col-sm-4 col-sm-offset-1">
                                                 <div class="picture-container">
                                                     <div class="picture">
-                                                        <img src="{{asset('public/frontend/assets/img/default-property.jpg')}}" class="picture-src" id="wizardPicturePreview" title=""/>
+                                                        <img src="{{asset('frontend/assets/img/default-property.jpg')}}" class="picture-src" id="wizardPicturePreview" title=""/>
                                                         <input name="photo" type="file" id="wizard-picture">
                                                     </div> 
                                                 </div>
@@ -54,7 +54,7 @@
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label>Price <small>(required) (if your property is for rent then enter monthly rent)</small></label>
+                                                    <label>Price <small>(required) (If your property is for rent then enter monthly rent)</small></label>
                                                     <input name="price" type="number" class="form-control" placeholder="3330000" required>
                                                 </div> 
                                                 <div class="form-group">
@@ -253,7 +253,7 @@
                                     <!-- End step 2 -->
 
                                     <div class="tab-pane" id="step3">                                        
-                                        <h4 class="info-text">Give us somme images and videos ? </h4>
+                                        <h4 class="info-text">Give us some images and videos ? </h4>
                                         <div class="row">  
                                             <div class="col-sm-6">
                                                 <div class="form-group">

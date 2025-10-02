@@ -47,8 +47,8 @@
                                             <img src="{{URL::to($image)}}" />
                                         </li>
                                         @else
-                                        <li data-thumb="{{asset('public/frontend/images/submittedunits/invalid_images/No_image_available.svg.png')}}"> 
-                                            <img src="{{asset('public/frontend/images/submittedunits/invalid_images/No_image_available.svg.png')}}" />
+                                        <li data-thumb="{{asset('frontend/images/submittedunits/invalid_images/No_image_available.svg.png')}}"> 
+                                            <img src="{{asset('frontend/images/submittedunits/invalid_images/No_image_available.svg.png')}}" />
                                         </li>
                                         @endif
                                         @endforeach
@@ -71,7 +71,7 @@
 
                                 <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
                                     <span class="property-info-icon icon-tag">                                        
-                                        <img src="{{asset('public/frontend/assets/img/icon/sale-orange.png')}}">
+                                        <img src="{{asset('frontend/assets/img/icon/sale-orange.png')}}">
                                     </span>
                                     <span class="property-info-entry">
                                         <span class="property-info-label">Status</span>
@@ -81,7 +81,7 @@
 
                                 <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
                                     <span class="property-info icon-area">
-                                        <img src="{{asset('public/frontend/assets/img/icon/room-orange.png')}}">
+                                        <img src="{{asset('frontend/assets/img/icon/room-orange.png')}}">
                                     </span>
                                     <span class="property-info-entry">
                                         <span class="property-info-label">Area</span>
@@ -91,7 +91,7 @@
 
                                 <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
                                     <span class="property-info icon-area">
-                                        <img src="{{asset('public/frontend/assets/img/icon/room-orange.png')}}">
+                                        <img src="{{asset('frontend/assets/img/icon/room-orange.png')}}">
                                     </span>
                                     <span class="property-info-entry">
                                         <span class="property-info-label">Common Area</span>
@@ -101,7 +101,7 @@
 
                                 <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
                                     <span class="property-info-icon icon-bed">
-                                        <img src="{{asset('public/frontend/assets/img/icon/bed-orange.png')}}">
+                                        <img src="{{asset('frontend/assets/img/icon/bed-orange.png')}}">
                                     </span>
                                     <span class="property-info-entry">
                                         <span class="property-info-label">Bedrooms</span>
@@ -112,7 +112,7 @@
                                 <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
                                     <span class="property-info-icon icon-bath">
                                         
-                                        <img src="{{asset('public/frontend/assets/img/icon/shawer-orange.png')}}">
+                                        <img src="{{asset('frontend/assets/img/icon/shawer-orange.png')}}">
                                     </span>
                                     <span class="property-info-entry">
                                         <span class="property-info-label">Bathrooms</span>
@@ -123,7 +123,7 @@
                                 <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
                                     <span class="property-info-icon icon-garage">
 
-                                        <img src="{{asset('public/frontend/assets/img/icon/os-orange.png')}}">
+                                        <img src="{{asset('frontend/assets/img/icon/os-orange.png')}}">
                                     </span>
                                     <span class="property-info-entry">
                                         <span class="property-info-label">Balconies</span>
@@ -133,7 +133,7 @@
 
                                 <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
                                     <span class="property-info-icon icon-bed">
-                                        <img src="{{asset('public/frontend/assets/img/icon/cars-orange.png')}}">
+                                        <img src="{{asset('frontend/assets/img/icon/cars-orange.png')}}">
                                     </span>
                                     @php $features = $unit->project->features @endphp
                                     <span class="property-info-entry">
@@ -145,7 +145,7 @@
                                 
                                 <div class="col-xs-6 col-sm-3 col-md-3 p-b-15">
                                     <span class="property-info-icon icon-garage">
-                                        <img style="height: 20px; width: 35px;" src="{{asset('public/frontend/assets/img/icon/generator-icon.png')}}">
+                                        <img style="height: 20px; width: 35px;" src="{{asset('frontend/assets/img/icon/generator-icon.png')}}">
                                     </span>
                                     <span class="property-info-entry">
                                         <span class="property-info-label">Generator</span>
@@ -273,7 +273,7 @@
                                 <h4 class="s-property-title">Property Video</h4> 
                                 <div class="video-thumb">
                                     <a class="video-popup" href="{{file_exists($unit->video_path) ? $unit->video_path : '#'}}" title="Virtual Tour">
-                                        <img src="{{asset('public/frontend/assets/img/property-video.jpg')}}" class="img-responsive wp-post-image" alt="Exterior">            
+                                        <img src="{{asset('frontend/assets/img/property-video.jpg')}}" class="img-responsive wp-post-image" alt="Exterior">            
                                     </a>
                                 </div>
                             </div>
@@ -287,43 +287,43 @@
                                     <ul> 
                                         <li>
                                           <a title="Share this on Dribbble" href="https://dribbble.com/sharing?url={{ urlencode(request()->fullUrl()) }}" target="_blank" rel="noopener">
-                                            <img src="{{ asset('public/frontend/assets/img/social_big/dribbble_grey.png') }}">
+                                            <img src="{{ asset('frontend/assets/img/social_big/dribbble_grey.png') }}">
                                           </a>
                                         </li>
 
                                         <li>
                                           <a title="Share this on Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode(request()->fullUrl()) }}" target="_blank" rel="noopener">
-                                            <img src="{{ asset('public/frontend/assets/img/social_big/facebook_grey.png') }}">
+                                            <img src="{{ asset('frontend/assets/img/social_big/facebook_grey.png') }}">
                                           </a>
                                         </li>
 
                                         <li>
                                           <a title="Share this on Delicious" href="https://del.icio.us/post?url={{ urlencode(request()->fullUrl()) }}" target="_blank" rel="noopener">
-                                            <img src="{{ asset('public/frontend/assets/img/social_big/delicious_grey.png') }}">
+                                            <img src="{{ asset('frontend/assets/img/social_big/delicious_grey.png') }}">
                                           </a>
                                         </li>
 
                                         <li>
                                           <a title="Share this on Tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl={{ urlencode(request()->fullUrl()) }}" target="_blank" rel="noopener">
-                                            <img src="{{ asset('public/frontend/assets/img/social_big/tumblr_grey.png') }}">
+                                            <img src="{{ asset('frontend/assets/img/social_big/tumblr_grey.png') }}">
                                           </a>
                                         </li>
 
                                         <li>
                                           <a title="Share this on Digg" href="http://digg.com/submit?url={{ urlencode(request()->fullUrl()) }}" target="_blank" rel="noopener">
-                                            <img src="{{ asset('public/frontend/assets/img/social_big/digg_grey.png') }}">
+                                            <img src="{{ asset('frontend/assets/img/social_big/digg_grey.png') }}">
                                           </a>
                                         </li>
 
                                         <li>
                                           <a title="Share this on Twitter" href="https://twitter.com/intent/tweet?url={{ urlencode(request()->fullUrl()) }}" target="_blank" rel="noopener">
-                                            <img src="{{ asset('public/frontend/assets/img/social_big/twitter_grey.png') }}">
+                                            <img src="{{ asset('frontend/assets/img/social_big/twitter_grey.png') }}">
                                           </a>
                                         </li>
 
                                         <li>
                                           <a title="Share this on LinkedIn" href="https://www.linkedin.com/sharing/share-offsite/?url={{ urlencode(request()->fullUrl()) }}" target="_blank" rel="noopener">
-                                            <img src="{{ asset('public/frontend/assets/img/social_big/linkedin_grey.png') }}">
+                                            <img src="{{ asset('frontend/assets/img/social_big/linkedin_grey.png') }}">
                                           </a>
                                         </li>
                                         
@@ -427,7 +427,7 @@
                                     @if($setting && $setting->ad_link && $setting->ad_image)
                                     <a href="{{$setting->ad_link}}"><img src="{{URL::to($setting->ad_image)}}"></a>
                                     @else
-                                    <a href="#"><img src="{{asset('public/frontend/assets/img/ads.jpg')}}"></a>
+                                    <a href="#"><img src="{{asset('frontend/assets/img/ads.jpg')}}"></a>
                                     @endif
                                 </div>
                             </div>

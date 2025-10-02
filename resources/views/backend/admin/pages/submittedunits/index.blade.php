@@ -40,7 +40,7 @@
                                     $images = explode(",",$unit->image_path);
                                     $image = $images[0] ?? '';
                                         $isValid = filter_var($image, FILTER_VALIDATE_URL) || file_exists($image) && !is_dir($image);
-                                        $src = $isValid ? URL::to($image) : asset('public/frontend/images/submittedunits/invalid_images/No_image_available.svg.png');                                    
+                                        $src = $isValid ? URL::to($image) : asset('frontend/images/submittedunits/invalid_images/No_image_available.svg.png');                                    
                                     @endphp
                         <td><img src="{{ $src }}" style="width:200px; height:150px;">
                         </td>
@@ -86,7 +86,7 @@
       @if(file_exists($image))
       <img class="d-block w-100 img-responsive" src="{{URL::to($image)}}" style="width:700px; height:700px;" alt="First slide">
       @else
-      <img class="d-block w-100 img-responsive" src="{{asset('public/frontend/images/submittedunits/invalid_images/No_image_available.svg.png')}}" style="width:700px; height:700px;" alt="First slide">      
+      <img class="d-block w-100 img-responsive" src="{{asset('frontend/images/submittedunits/invalid_images/No_image_available.svg.png')}}" style="width:700px; height:700px;" alt="First slide">      
       @endif
     </div>
     @endforeach
@@ -97,7 +97,7 @@
           <div class="container">
             <div class="row">
               <div class="details">
-                <img class="profile-pic" src="{{file_exists($unit->user_photo) ? URL::to($unit->user_photo) : asset('public/frontend/assets/img/profile-1.png') }}">
+                <img class="profile-pic" src="{{file_exists($unit->user_photo) ? URL::to($unit->user_photo) : asset('frontend/assets/img/profile-1.png') }}">
                 <h2>Submitted By: {{$unit->user->first_name.' '.$unit->user->last_name}} </h2>
                 <ul>
                   <li><strong>Floor: </strong>{{$unit->floor}}</li>

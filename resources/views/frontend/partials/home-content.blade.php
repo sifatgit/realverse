@@ -204,7 +204,7 @@
                                     $images = explode(",",$unit->image_path);
                                     $image = $images[0] ?? '';
                                         $isValid = filter_var($image, FILTER_VALIDATE_URL) || file_exists($image) && !is_dir($image);
-                                        $src = $isValid ? URL::to($image) : asset('public/frontend/images/submittedunits/invalid_images/No_image_available.svg.png');                                    
+                                        $src = $isValid ? URL::to($image) : asset('frontend/images/submittedunits/invalid_images/No_image_available.svg.png');                                    
                                     @endphp
                                     <a href="{{route('unit.show',$unit->id)}}" ><img width="273" height="225" src="{{$src}}"></a>
                                 </div>

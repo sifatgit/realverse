@@ -1,28 +1,28 @@
-        <script src="{{asset('public/frontend/assets/js/modernizr-2.6.2.min.js')}}"></script>
-        <script src="{{asset('public/frontend/assets/js/jquery-1.10.2.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/modernizr-2.6.2.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/jquery-1.10.2.min.js')}}"></script>
 
-        <script src="{{asset('public/frontend/bootstrap/js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('public/frontend/assets/js/bootstrap-select.min.js')}}"></script>
-        <script src="{{asset('public/frontend/assets/js/bootstrap-hover-dropdown.js')}}"></script>
+        <script src="{{asset('frontend/bootstrap/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/bootstrap-select.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/bootstrap-hover-dropdown.js')}}"></script>
 
-        <script src="{{asset('public/frontend/assets/js/easypiechart.min.js')}}"></script>
-        <script src="{{asset('public/frontend/assets/js/jquery.easypiechart.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/easypiechart.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/jquery.easypiechart.min.js')}}"></script>
 
-        <script src="{{asset('public/frontend/assets/js/owl.carousel.min.js')}}"></script> 
+        <script src="{{asset('frontend/assets/js/owl.carousel.min.js')}}"></script> 
 
 
-        <script src="{{asset('public/frontend/assets/js/wow.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/wow.js')}}"></script>
 
-        <script src="{{asset('public/frontend/assets/js/icheck.min.js')}}"></script>
-        <script src="{{asset('public/frontend/assets/js/price-range.js')}}"></script>
-        <script src="{{ asset('public/frontend/assets/js/lightslider.min.js') }}"></script>
-        <script src="{{asset('public/frontend/assets/js/main.js')}}"></script>
-        <script src="{{asset('public/frontend/assets/js/jquery.bootstrap.wizard.js')}}" type="text/javascript"></script>
-        <script src="{{asset('public/frontend/assets/js/jquery.validate.min.js')}}"></script>
-        <script src="{{ asset('public/frontend/assets/js/wizard.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/icheck.min.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/price-range.js')}}"></script>
+        <script src="{{ asset('frontend/assets/js/lightslider.min.js') }}"></script>
+        <script src="{{asset('frontend/assets/js/main.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/jquery.bootstrap.wizard.js')}}" type="text/javascript"></script>
+        <script src="{{asset('frontend/assets/js/jquery.validate.min.js')}}"></script>
+        <script src="{{ asset('frontend/assets/js/wizard.js')}}"></script>
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-        <script src="{{asset('public/frontend/assets/js/gmaps.js')}}"></script>        
-        <script src="{{asset('public/frontend/assets/js/gmaps.init.js')}}"></script>
+        <script src="{{asset('frontend/assets/js/gmaps.js')}}"></script>        
+        <script src="{{asset('frontend/assets/js/gmaps.init.js')}}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 

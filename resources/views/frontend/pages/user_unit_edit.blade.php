@@ -47,7 +47,7 @@
                                                     	<input type="hidden" name="old_photo" value="{{$old_photo}}">
                                                         <img src="{{URL::to($old_photo)}}" class="picture-src" id="wizardPicturePreview" title=""/>
                                                         @else
-                                                        <img src="{{asset('public/frontend/assets/img/default-property.jpg')}}" class="picture-src" id="wizardPicturePreview" title=""/>
+                                                        <img src="{{asset('frontend/assets/img/default-property.jpg')}}" class="picture-src" id="wizardPicturePreview" title=""/>
                                                         @endif
                                                         <input name="photo" type="file" id="wizard-picture">
                                                     </div> 

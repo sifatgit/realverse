@@ -106,7 +106,7 @@
                     @if($setting && $setting->logo)
                     <a class="navbar-brand" href="{{url('/')}}"><img width="195.8378" height="48" src="{{URL::to($setting->logo)}}" alt=""></a>
                     @else
-                    <a class="navbar-brand" href="{{url('/')}}"><img style="width: 195.8378 px; height: 48 px;" src="{{asset('public/frontend/assets/img/logo.png')}}" alt=""></a>
+                    <a class="navbar-brand" href="{{url('/')}}"><img style="width: 195.8378 px; height: 48 px;" src="{{asset('frontend/assets/img/logo.png')}}" alt=""></a>
                     @endif
                 </div>
 

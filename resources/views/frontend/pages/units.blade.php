@@ -316,10 +316,10 @@
                                             <span class="proerty-price pull-right"> ${{number_format($unit->price)}}</span>
                                             <p style="display: none;">{{$unit->view}}</p>
                                             <div class="property-icon">
-                                                <img src="{{asset('public/frontend/assets/img/icon/bed.png')}}">{{$unit->bedrooms}}|
-                                                <img src="{{asset('public/frontend/assets/img/icon/shawer.png')}}">{{$unit->bathrooms}}|
+                                                <img src="{{asset('frontend/assets/img/icon/bed.png')}}">{{$unit->bedrooms}}|
+                                                <img src="{{asset('frontend/assets/img/icon/shawer.png')}}">{{$unit->bathrooms}}|
                                                 @php $features = $unit->project->features @endphp
-                                                <img src="{{asset('public/frontend/assets/img/icon/cars.png')}}">{{in_array('parking',$features) ? '1' : '0'}}  
+                                                <img src="{{asset('frontend/assets/img/icon/cars.png')}}">{{in_array('parking',$features) ? '1' : '0'}}  
                                             </div>
                                         </div>
 

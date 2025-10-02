@@ -70,7 +70,7 @@ class AdminAgentsController extends Controller
             $image_name=hexdec(uniqid());
             $ext=strtolower($image->getClientOriginalExtension());
             $image_full_name=$image_name.'.'.$ext;
-            $upload_path='public/admin/images/agents/';
+            $upload_path='admin/images/agents/';
             $image_url=$upload_path.$image_full_name;
             $success=$image->move($upload_path,$image_full_name);
             $agent->profile_photo = $image_url;

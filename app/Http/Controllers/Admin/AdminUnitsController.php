@@ -226,7 +226,7 @@ class AdminUnitsController extends Controller
                 $fileName.=$i;
                 $fileName.='.';
                 $fileName.=$fileNameExtract[1];
-                $path = 'public/admin/images/units/';
+                $path = 'admin/images/units/';
                 $file->move($path,$fileName);
                 $image_url = $path.$fileName;
                 $images[]=$image_url;
@@ -240,7 +240,7 @@ class AdminUnitsController extends Controller
             $path = $request->file('video_path')->store('videos', 'public'); 
             // 'videos' is the folder inside storage/app/public
 
-            $unit->video_path = 'public/storage/'.$path;
+            $unit->video_path = 'storage/'.$path;
 
             }
 
@@ -249,7 +249,7 @@ class AdminUnitsController extends Controller
             $path = $request->file('pdf_path')->store('pdfs', 'public'); 
             // 'videos' is the folder inside storage/app/public
 
-            $unit->pdf_path = 'public/storage/'.$path;
+            $unit->pdf_path = 'storage/'.$path;
 
             }                    
 
@@ -337,7 +337,7 @@ class AdminUnitsController extends Controller
                 $fileName.=$i;
                 $fileName.='.';
                 $fileName.=$fileNameExtract[1];
-                $path = 'public/admin/images/units/';
+                $path = 'admin/images/units/';
                 $file->move($path,$fileName);
                 $image_url = $path.$fileName;
                 $images[]=$image_url;
@@ -353,7 +353,7 @@ class AdminUnitsController extends Controller
         if ($request->hasFile('video_path')) {
 
             if ($unit->video_path) {
-            $pathToDelete = str_replace('public/storage/', '', $unit->video_path);
+            $pathToDelete = str_replace('storage/', '', $unit->video_path);
             Storage::disk('public')->delete($pathToDelete);
             }
 
@@ -361,14 +361,14 @@ class AdminUnitsController extends Controller
             $path = $request->file('video_path')->store('videos', 'public'); 
             // 'videos' is the folder inside storage/app/public
 
-            $unit->video_path ='public/storage/'.$path;
+            $unit->video_path ='storage/'.$path;
 
             }
 
         if ($request->hasFile('pdf_path')) {
 
             if($unit->pdf_path){
-            $pathToDelete = str_replace('public/storage/', '', $unit->pdf_path);
+            $pathToDelete = str_replace('storage/', '', $unit->pdf_path);
             Storage::disk('public')->delete($pathToDelete);                
             }
 
@@ -377,7 +377,7 @@ class AdminUnitsController extends Controller
             $path = $request->file('pdf_path')->store('pdfs', 'public'); 
             // 'videos' is the folder inside storage/app/public
 
-            $unit->pdf_path = 'public/storage/'.$path;
+            $unit->pdf_path = 'storage/'.$path;
 
             }             
 
@@ -394,8 +394,8 @@ class AdminUnitsController extends Controller
         abort(404);
     }
 
-    // Remove the "public/storage/" part to get the actual storage path
-    $relativePath = str_replace('public/storage/', '', $unit->pdf_path);
+    // Remove the "storage/" part to get the actual storage path
+    $relativePath = str_replace('storage/', '', $unit->pdf_path);
 
     if (!Storage::disk('public')->exists($relativePath)) {
         abort(404);
@@ -457,13 +457,13 @@ class AdminUnitsController extends Controller
         }
 
         if ($unit->video_path) {
-        $pathToDelete = str_replace('public/storage/', '', $unit->video_path);
+        $pathToDelete = str_replace('storage/', '', $unit->video_path);
         Storage::disk('public')->delete($pathToDelete);
         }
 
 
         if ($unit->pdf_path) {
-        $pathToDelete = str_replace('public/storage/', '', $unit->pdf_path);
+        $pathToDelete = str_replace('storage/', '', $unit->pdf_path);
         Storage::disk('public')->delete($pathToDelete);
         }
 

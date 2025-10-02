@@ -141,7 +141,7 @@ class AdminProjectsController extends Controller
             $image_name=hexdec(uniqid());
             $ext=strtolower($image->getClientOriginalExtension());
             $image_full_name=$image_name.'.'.$ext;
-            $upload_path='public/admin/images/projects/';
+            $upload_path='admin/images/projects/';
             $image_url=$upload_path.$image_full_name;
             $success=$image->move($upload_path,$image_full_name);
             $project->image = $image_url;
@@ -308,7 +308,7 @@ class AdminProjectsController extends Controller
             $image_name=hexdec(uniqid());
             $ext=strtolower($image->getClientOriginalExtension());
             $image_full_name=$image_name.'.'.$ext;
-            $upload_path='public/admin/images/projects/';
+            $upload_path='admin/images/projects/';
             $image_url=$upload_path.$image_full_name;
             $success=$image->move($upload_path,$image_full_name);
             $project->image = $image_url;

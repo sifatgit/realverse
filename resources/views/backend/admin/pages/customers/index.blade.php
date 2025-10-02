@@ -68,7 +68,7 @@
             	@if($user->image)
               <img class="d-block w-100" src="{{URL::to($user->image)}}" style="width:88px; height:500px;" alt="First slide">
               @else
-              <img class="d-block w-100" src="{{asset('public/frontend/assets/img/profile-1.png')}}" style="width:88px; height:500px;" alt="First slide">
+              <img class="d-block w-100" src="{{asset('frontend/assets/img/profile-1.png')}}" style="width:88px; height:500px;" alt="First slide">
               @endif
 
             </div>

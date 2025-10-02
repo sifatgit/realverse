@@ -35,9 +35,9 @@
                         <td><img src="{{URL::to($comment->blog->image)}}" style="width: 200px; height: 150px;"></td>
                         <td>{{$comment->name}}</td>
                         @if($comment->user)
-                        <td> <img src="{{file_exists($comment->user->image) ? URL::to($comment->user->image) : asset('public/frontend/assets/img/profile-1.png')}}" style="width: 200px; height: 150px;"> </td>
+                        <td> <img src="{{file_exists($comment->user->image) ? URL::to($comment->user->image) : asset('frontend/assets/img/profile-1.png')}}" style="width: 200px; height: 150px;"> </td>
                         @else
-                        <td> <img src="{{asset('public/frontend/assets/img/profile-1.png')}}" style="width: 200px; height: 150px;"> </td>                        
+                        <td> <img src="{{asset('frontend/assets/img/profile-1.png')}}" style="width: 200px; height: 150px;"> </td>                        
                         @endif
                         <td>{{$comment->email}}</td>                                                                
      

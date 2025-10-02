@@ -180,7 +180,7 @@
 
             
             <div class="carousel-item active">
-              <img class="d-block w-100" src="{{(file_exists($agent->profile_photo) || filter_var($agent->profile_photo,FILTER_VALIDATE_URL)) ? URL::to($agent->profile_photo) : asset('public/frontend/assets/img/profile-1.png')}}" style="width:700px; height:700px;" alt="First slide">
+              <img class="d-block w-100" src="{{(file_exists($agent->profile_photo) || filter_var($agent->profile_photo,FILTER_VALIDATE_URL)) ? URL::to($agent->profile_photo) : asset('frontend/assets/img/profile-1.png')}}" style="width:700px; height:700px;" alt="First slide">
             </div>
            
          

@@ -54,11 +54,11 @@ class ProfileController extends Controller
             if(file_exists($old_imamge_path)){
                 unlink($old_imamge_path);
             }
-            // Store the image in storage/app/public/profile_images (adjust path as you want)
+            // Store the image in storage/app/profile_images (adjust path as you want)
             $path = $image->store('profile_images', 'public');
 
             // Save the path or filename in the user model
-            $request->user()->image = 'public/storage/'. $path;
+            $request->user()->image = 'storage/'. $path;
         }        
 
         $request->user()->save();

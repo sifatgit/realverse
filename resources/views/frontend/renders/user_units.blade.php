@@ -9,7 +9,7 @@
                                             $images = explode(",",$unit->image_path);
                                             $image = $images[0] ?? '';
                                                 $isValid = filter_var($image, FILTER_VALIDATE_URL) || file_exists($image) && !is_dir($image);
-                                                $src = $isValid ? URL::to($image) : asset('public/frontend/images/submittedunits/invalid_images/No_image_available.svg.png');                                    
+                                                $src = $isValid ? URL::to($image) : asset('frontend/images/submittedunits/invalid_images/No_image_available.svg.png');                                    
                                             @endphp                                            
                                             <a href="{{route('user.unit.show',$unit->id)}}" ><img src="{{$src}}"></a>
                                         </div>
@@ -20,9 +20,9 @@
                                             <span class="proerty-price pull-right"> ${{number_format($unit->price)}}</span>
                                             <p style="display: none;">{{$unit->description}}</p>
                                             <div class="property-icon">
-                                                <img src="{{asset('public/frontend/assets/img/icon/bed.png')}}">({{$unit->bedrooms}})|
-                                                <img src="{{asset('public/frontend/assets/img/icon/shawer.png')}}">({{$unit->bathrooms}})|
-                                                <img src="{{asset('public/frontend/assets/img/icon/cars.png')}}">(({{in_array('parking', $features) ? '1' : '0'}}))  
+                                                <img src="{{asset('frontend/assets/img/icon/bed.png')}}">({{$unit->bedrooms}})|
+                                                <img src="{{asset('frontend/assets/img/icon/shawer.png')}}">({{$unit->bathrooms}})|
+                                                <img src="{{asset('frontend/assets/img/icon/cars.png')}}">(({{in_array('parking', $features) ? '1' : '0'}}))  
 
                                                 <div class="dealer-action pull-right">
                                                     <a href="{{route('user.unit.show',$unit->id)}}" class="button">View</a>

@@ -118,11 +118,11 @@
                                         @if(Auth::user()->image)
                                         <img src="{{URL::to(Auth::user()->image)}}" class="img-responsive img-circle" alt="">
                                         @else
-                                        <img src="{{asset('public/frontend/assets/img/profile-1.png')}}" class="img-responsive img-circle" alt="">
+                                        <img src="{{asset('frontend/assets/img/profile-1.png')}}" class="img-responsive img-circle" alt="">
                                         @endif
 
                                         @else
-                                        <img src="{{asset('public/frontend/assets/img/profile-1.png')}}" class="img-responsive img-circle" alt="">                                        
+                                        <img src="{{asset('frontend/assets/img/profile-1.png')}}" class="img-responsive img-circle" alt="">                                        
                                         @endauth
                                     </p>
                                 </div>
