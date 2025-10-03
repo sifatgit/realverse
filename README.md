@@ -131,7 +131,7 @@ Enter: [http://127.0.0.1:8000](http://127.0.0.1:8000/) to run the project
 php artisan db:seed
 ```
 
-#### Or you can simply download: realverse.sql and import it in your database.
+#### Or you can simply download: [realverse.sql](https://github.com/user-attachments/files/22671338/realverse.sql) and import it in your database.
 
 #### For accessing admin panel check the AdminSeeder.php for login credentials
 #### Also replace admin token in the .env with your prefered custom token code
